@@ -328,28 +328,30 @@ class _PaymentState extends State<Payment> {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Column(
-                            mainAxisSize: MainAxisSize.min,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                "Payment",
-                                style: TextStyle(
-                                    fontSize: 16,
-                                    color: Colors.black87,
-                                    fontWeight: FontWeight.w400),
-                              ),
-                              SizedBox(
-                                height: 5,
-                              ),
-                              Text(
-                                "To PT SOLUSI TRANSPORTASI INDONESIA",
-                                style: TextStyle(
-                                    fontSize: 12,
-                                    color: Colors.black38,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            ],
+                          Flexible(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Payment",
+                                  style: TextStyle(
+                                      fontSize: 16,
+                                      color: Colors.black87,
+                                      fontWeight: FontWeight.w400),
+                                ),
+                                SizedBox(
+                                  height: 5,
+                                ),
+                                Text(
+                                  "To PT SOLUSI TRANSPORTASI INDONESIA",
+                                  style: TextStyle(
+                                      fontSize: 12,
+                                      color: Colors.black38,
+                                      fontWeight: FontWeight.bold),
+                                ),
+                              ],
+                            ),
                           ),
                           Row(
                             children: [

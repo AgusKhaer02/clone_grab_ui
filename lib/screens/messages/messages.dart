@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:grab_ui1/screens/messages/pages/chats/chats.dart';
+import 'package:grab_ui1/screens/messages/pages/notifications/notifications.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
 
 class Messages extends StatefulWidget {
@@ -72,12 +74,8 @@ class _MessagesState extends State<Messages>
         child: TabBarView(
           controller: _tabController,
           children: [
-            Center(
-              child: Text("Chats"),
-            ),
-            Center(
-              child: Text("Notifications"),
-            )
+            Chats(),
+            Notifications(),
           ],
         ),
       ),
